@@ -5,6 +5,7 @@ export const proyectos = [
   {
     id: 1,
     titulo: "Sistema de Gestión de Operaciones Aéreas",
+    slug: "operaciones",
     descripcion: "Proyecto desarrollado para optimizar y centralizar los procesos operativos asociados a vuelos, utilizado por equipos internos en un entorno productivo.",
     img: operaciones,
     lenguajes: ["Html5", "CSS", "Javascript", "jQuery"],
@@ -12,6 +13,7 @@ export const proyectos = [
   {
     id: 2,
     titulo: "Rendiciones",
+    slug: "rendiciones",
     descripcion: "Desarrollo de un sistema web para la gestión y control de rendiciones de gastos corporativos, diseñado para optimizar el flujo de aprobación y garantizar trazabilidad en los procesos financieros.",
     img: rendiciones,
     lenguajes: ["Html5", "CSS", "Javascript", "jQuery", "SAP"],
@@ -19,6 +21,7 @@ export const proyectos = [
   {
     id: 3,
     titulo: "Intranet Corporativa",
+    slug: "intranet",
     descripcion: "Desarrollo de una Intranet corporativa orientada a centralizar la comunicación interna de la organización, asegurando orden, trazabilidad y fácil acceso a procedimientos y comunicados internos.",
     img: rendiciones,
     lenguajes: ["Html5", "CSS", "Javascript", "jQuery", "API REST"],
@@ -26,6 +29,7 @@ export const proyectos = [
   {
     id: 4,
     titulo: "Sistema de Compras",
+    slug: "compras",
     descripcion: "Desarrollo de una Intranet corporativa orientada a centralizar la comunicación interna de la organización.",
     img: rendiciones,
     lenguajes: ["Html5", "CSS", "Javascript", "jQuery", "API REST"],
@@ -33,6 +37,7 @@ export const proyectos = [
   {
     id: 5,
     titulo: "Rediseño UX Mayorista 10",
+    slug: "mayorista10",
     descripcion: "Desarrollo de una Intranet corporativa orientada a centralizar la comunicación interna de la organización.",
     img: rendiciones,
     lenguajes: ["Figma", "Metodologías Ágiles", "Investigación UX"],

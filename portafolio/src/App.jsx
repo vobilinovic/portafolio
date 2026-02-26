@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import Navbar from "./components/Navbar";
-import Presentacion from './components/Presentacion';
-import Formacion from './components/Formacion';
-import Experiencia from './components/Experiencia';
-import Proyectos from './components/Proyectos';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import ProyectoDetalle from "./pages/ProyectoDetalle";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Presentacion/>
-      <Formacion/>
-      <Experiencia/>
-      <Proyectos/>
-    </>
-  )
+    <BrowserRouter basename="/portafolio">
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/proyecto/:id" element={<ProyectoDetalle />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
-

@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {DivTitulo, TituloPrincipal, Theme} from "../styles/Estilos"
+import {DivTitulo, TituloPrincipal} from "../styles/Estilos"
 import { proyectos } from "../data/Proyectos";
+import { Link } from "react-router-dom";
 
 function Proyectos(){
     return(
@@ -26,7 +27,7 @@ function Proyectos(){
                                         ))
                                     }
                                 </DivSpan>
-                                <CardBtn>Ver</CardBtn>
+                                <CardBtn to={`/proyecto/${p.slug}`}>Ver</CardBtn>
                             </CardFooter>
                         </Card>
                     ))
@@ -67,12 +68,17 @@ const CardImg = styled.img`
     object-fit: fill;
     display: block;
     height: 250px;
+    transition: all 0.5s ease;
+
+    &:hover{
+        opacity: 40%;
+    }
 `;
 
 const CardTitle = styled.p`
     font-size: 16px;
     font-weight: 600;
-    color: ${({ Theme }) => Theme.colors.primary};
+    color: #8370d0;
 `;
 
 const CardParrafo = styled.p`
@@ -85,7 +91,7 @@ const CardBtn = styled.button`
     width: 100%;
     font-size: 14px;
     color: white;
-    background-color: ${({ Theme }) => Theme.colors.primary};
+    background-color: #8370d0;
     padding: 5px 0;
     border-radius: 10px;
     border: none;
@@ -107,10 +113,9 @@ const DivSpan = styled.span`
 `;
 
 const Span = styled.span`
-    border: 1px;
-    border-color: ${({ Theme }) => Theme.colors.primary};
+    border: solid 1px #8370d0;
     border-radius: 10px;
     font-size: 12px;
     padding: 5px 10px;
-    background-color: ${({ Theme }) => Theme.colors.secondary};
+    background-color: #f5f5f5;
 `;
