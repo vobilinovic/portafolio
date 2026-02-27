@@ -1,18 +1,25 @@
 import { useState } from 'react'
 import Navbar from "../components/Navbar";
 import Presentacion from '../components/Presentacion';
-import Formacion from '../components/Formacion';
+import FormacionComponente from '../components/Formacion';
 import Experiencia from '../components/Experiencia';
 import Proyectos from '../components/Proyectos';
+import Contacto from '../components/Contacto';
+import {Gradiente} from "../styles/Estilos"
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Presentacion/>
-      <Formacion/>
-      <Experiencia/>
-      <Proyectos/>
+
+        <Gradiente>
+          <Navbar />
+          <Presentacion/>
+        </Gradiente>
+        <FormacionComponente/>
+        <Experiencia/>
+        <Proyectos/>
+        <Contacto/>
+
     </>
   )
 }

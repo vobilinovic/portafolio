@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {DivTitulo, TituloPrincipal} from "../styles/Estilos"
+import {DivTitulo, TituloPrincipal, BotonBase, Span} from "../styles/Estilos"
 import { proyectos } from "../data/Proyectos";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,6 @@ function Proyectos(){
                             <CardBody>
                                 <CardTitle>{p.titulo}</CardTitle>
                                 <CardParrafo>{p.descripcion}</CardParrafo>
-                                <hr/>
                             </CardBody>
                             <CardFooter>
                                 <DivSpan>
@@ -33,6 +32,10 @@ function Proyectos(){
                     ))
                 }
             </GridCards>
+            <Texto>
+                <b>Importante:</b> Todos los proyectos presentados han sido modificados para proteger la confidencialidad de la información, 
+                garantizando que no se revele ningún dato sensible o específico de los proyectos originales.
+            </Texto>
         </section>
     );
 }
@@ -50,6 +53,7 @@ const GridCards = styled.div`
     gap: 30px;
     padding: 0 80px;
     align-items: stretch;
+    margin-bottom: 50px;
 `;
 
 const Card = styled.div`
@@ -61,6 +65,7 @@ const Card = styled.div`
 `;
 const CardBody = styled.div`
     padding: 10px 20px;
+    height: 200px;
 `;
 
 const CardImg = styled.img`
@@ -86,22 +91,16 @@ const CardParrafo = styled.p`
     color: #5C5C5C;
 `;
 
-const CardBtn = styled.button`
-    font-family: 'Poppins', sans-serif;
+const CardBtn = styled(BotonBase)`
     width: 100%;
-    font-size: 14px;
-    color: white;
-    background-color: #8370d0;
-    padding: 5px 0;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
 `;
 
 const CardFooter = styled.div`
-    padding: 0 20px 20px 20px;
+    padding: 20px;
+    margin: 0px 10px;
     display: flex;
     flex-direction: column;
+    border-top: solid 1px #f5f5f5;
     gap: 15px;
 `;
 
@@ -112,10 +111,9 @@ const DivSpan = styled.span`
     padding-bottom: 20px;
 `;
 
-const Span = styled.span`
-    border: solid 1px #8370d0;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 5px 10px;
-    background-color: #f5f5f5;
+
+const Texto = styled.p`
+    text-align: center;
+    padding: 0px 400px;
+    color: #5C5C5C;
 `;

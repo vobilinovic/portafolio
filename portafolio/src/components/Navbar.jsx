@@ -25,10 +25,10 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    height: 85px;
-    background-color: #8370d0;
-    color: white;
+    padding: 10px 80px;
+    height: 60px;
+    background-color: transparent;
+    color: #8370D0;
 `;
 
 const Logo = styled.div`
@@ -53,8 +53,8 @@ const Menu = styled.nav`
 
 const Item = styled.a`
     font-size: 18px;
-    font-weight: 500;
-    color: white;
+    font-weight: 00;
+    color: #5C5C5C;
     cursor: pointer;
     transition: all 0.5s ease;
 
