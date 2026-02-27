@@ -16,9 +16,12 @@ export const Device = {
   desktop: '1200px',
 };
 
+export const 
+
 export const DivTitulo = styled.div`
     align-items: center;
     text-align: center;
+    
 `;
 
 export const TituloPrincipal = styled.p`
@@ -26,6 +29,7 @@ export const TituloPrincipal = styled.p`
     color: #8370d0;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
 `;
 
 export const Parrafo = styled.div`

@@ -10,7 +10,7 @@ export const Formacion = [
   },
   {
     id: 2,
-    fecha: "2025",
+    fecha: "Sep 2025 - Dic 2025",
     titulo: "Diplomado en Diseño UX/UI Agile",
     universidad: "Universidad de Santiago de Chile",
     icono: LayoutDashboard

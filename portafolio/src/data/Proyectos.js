@@ -1,6 +1,7 @@
 import rendiciones from "../assets/Rendiciones/rendicionesCard.jpg";
 import operaciones from "../assets/Vuelos/vuelos_generico.jpg";
 import intranet from "../assets/Intranet/intranet.png";
+import mayorista10 from "../assets/mayorista10/mayorista10.png";
 
 export const proyectos = [
   {
@@ -40,7 +41,7 @@ export const proyectos = [
     titulo: "Rediseño UX Mayorista 10",
     slug: "mayorista10",
     descripcion: "Proyecto de rediseño UX del sitio web de Mayorista10, desarrollado durante un Diplomado en Diseño UX, aplicando investigación de usuarios, análisis de usabilidad y diseño centrado en el usuario. Se elaboraron wireframes y prototipos interactivos en Figma con el objetivo de mejorar la experiencia.",
-    img: rendiciones,
+    img: mayorista10,
     lenguajes: ["Figma", "Metodologías Ágiles", "Investigación UX"],
   }
 ];
